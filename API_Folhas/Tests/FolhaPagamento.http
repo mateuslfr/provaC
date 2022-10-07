@@ -1,0 +1,27 @@
+### Listar as folhas
+GET https://localhost:5001/api/folhapagamento/listar
+
+### Buscar uma folha
+GET https://localhost:5001/api/folhapagamento/buscar/120
+
+### Cadastrar uma folha
+POST https://localhost:5001/api/folhapagamento/cadastrar
+Content-Type: application/json
+
+{
+    "valorhora" : 90,
+    "quantidadehoras" : 8
+}
+
+### Deletar uma folha
+DELETE https://localhost:5001/api/folhapagamento/deletar/2
+
+### Alterar uma folha
+PATCH https://localhost:5001/api/folhapagamento/alterar
+Content-Type: application/json
+
+{
+    "FolhaId" : 1,
+    "valorhora" : 120,
+    "FuncionarioId" : 16 
+}
